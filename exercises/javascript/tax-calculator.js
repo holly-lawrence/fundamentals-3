@@ -24,7 +24,7 @@ let TaxCalculator = class TaxCalculator {
     const co2_bound = co2_bounds.find(x => x > co2Emissions) - 1;
 
     const initial_price = init_prices[`${fuelType}`][co2_bound];
-
+    console.log(init_prices[`${fuelType}`]);
     return initial_price;
   }
 
@@ -34,7 +34,7 @@ let TaxCalculator = class TaxCalculator {
 
 
     // Find Price
-    initial_price = calculateInitialPayment(vehicle.fuelType, vehicle.co2Emissions);
+    initial_price = this.calculateInitialPayment(vehicle.fuelType, vehicle.co2Emissions);
 
     return initial_price
 
