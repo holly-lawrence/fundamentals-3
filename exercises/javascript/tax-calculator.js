@@ -18,7 +18,8 @@ let TaxCalculator = class TaxCalculator {
     const init_prices = {
         'Petrol': [0,10,25,105,125,145,165,205,515,830,1240,1760,2070],
         'Diesel': [0,25,105,125,145,165,205,515,830,1240,1760,2070,2070],
-        'Alternative fuel': [0,0,15,95,115,135,155,195,505,820,1230,1750,2060]
+        'Alternative fuel': [0,0,15,95,115,135,155,195,505,820,1230,1750,2060],
+        'Electric': [0,0,0,0,0,0,0,0,0,0,0,0,0,0]
         };
 
     const co2_bound = co2_bounds.findIndex(x => x > co2Emissions) - 1;
